@@ -16,7 +16,7 @@ Un riferimento per l’approccio editoriale e per la rappresentazione "visuale d
 
 <img src="img/Screenshot 2025-05-08 alle 17.28.52.png" width="200" alt="Landing page" />
 
-[thepiratebook.net](https://thepiratebook.net)
+
 
 
 ## Design dell’interfaccia e modalità di interazione
