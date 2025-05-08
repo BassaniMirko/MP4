@@ -1,5 +1,5 @@
 # MP4: Compressione, struttura e codec  
-Autrice: Arianna Chiodo  
+Autore: Mirko Bassani  
 [Visualizza il progetto](https://tuosito.github.io/percorso/progetto)
 
 ## Introduzione e tema
@@ -14,7 +14,7 @@ Tramite un'interfaccia ASCII ispirata ai terminali, l'utente può esplorare i bo
 Un progetto editoriale curato da Nicolas Maigret e Maria Roszkowska che riflette visivamente, tramite estetica ASCII e tipografia monospazio, pratiche culturali legate alla condivisione e distribuzione dei media.  
 Un riferimento per l’approccio editoriale e per la rappresentazione "visuale del codice" nel design dell’interfaccia.
 
-![The Pirate Book cover](Screenshot 2025-05-08 alle 17.28.52.png)
+
 [thepiratebook.net](https://thepiratebook.net)
 
 
@@ -38,7 +38,7 @@ L'interfaccia si presenta come un terminale interattivo con elementi ASCII stili
 
 Il progetto è pensato per studenti, designer e sviluppatori curiosi di capire come è fatto un file `.mp4` a livello strutturale, e quali ruoli svolgono i box interni e i codec associati. È utile anche in un contesto didattico per introdurre i concetti di compressione, formati container e metadati multimediali.
 
-## Autrice
+## Autore
 
-Arianna Chiodo  
+Mirko Bassani 
 Corso di Interaction Design – SUPSI DACD, 2025  
