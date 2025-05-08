@@ -1,5 +1,5 @@
 # MP4: Compressione, struttura e codec  
-Autrice: Arianna Chiodo  
+Autore: Mirko Bassani  
 [Visualizza il progetto](https://tuosito.github.io/percorso/progetto)
 
 ## Introduzione e tema
