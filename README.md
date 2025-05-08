@@ -1,6 +1,6 @@
 # MP4: Compressione, struttura e codec  
 Autore: Mirko Bassani  
-([Visualizza il progetto]([https://tuosito.github.io/percorso/progetto](https://bassanimirko.github.io/MP4/index.html))
+[https://tuosito.github.io/percorso/progetto](https://bassanimirko.github.io/MP4/index.html))
 
 ## Introduzione e tema
 
