@@ -14,7 +14,7 @@ Tramite un'interfaccia ASCII ispirata ai terminali, l'utente può esplorare i bo
 Un progetto editoriale curato da Nicolas Maigret e Maria Roszkowska che riflette visivamente, tramite estetica ASCII e tipografia monospazio, pratiche culturali legate alla condivisione e distribuzione dei media.  
 Un riferimento per l’approccio editoriale e per la rappresentazione "visuale del codice" nel design dell’interfaccia.
 
-<img src="img/Screenshot 2025-05-08 alle 17.28.52.png" width="300" alt="Landing page" />
+<img src="img/Screenshot 2025-05-08 alle 17.28.52.png" width="200" alt="Landing page" />
 
 [thepiratebook.net](https://thepiratebook.net)
 
