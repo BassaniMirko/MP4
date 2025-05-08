@@ -38,6 +38,14 @@ L'interfaccia si presenta come un terminale interattivo con elementi ASCII stili
 
 Il progetto è pensato per studenti, designer e sviluppatori curiosi di capire come è fatto un file `.mp4` a livello strutturale, e quali ruoli svolgono i box interni e i codec associati. È utile anche in un contesto didattico per introdurre i concetti di compressione, formati container e metadati multimediali.
 
+<img src="img/Screenshot 2025-05-09 alle 00.31.25" width="500" alt="Landing page" />
+
+<img src="img/Screenshot 2025-05-09 alle 00.26.47" width="500" alt="Box-drawing characters" />
+
+<img src="img/Screenshot 2025-05-09 alle 00.28.01" width="500" alt="Esplora un file mp4" />
+
+
+
 ## Autore
 
 Mirko Bassani 
