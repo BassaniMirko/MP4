@@ -1,0 +1,531 @@
+[
+  {
+    "name": "ftyp",
+    "header_size": 8,
+    "size": 32,
+    "major_brand": "isom",
+    "minor_version": 512,
+    "compatible_brand": "isom",
+    "compatible_brand": "iso2",
+    "compatible_brand": "avc1",
+    "compatible_brand": "mp41"
+  },
+  {
+    "name": "moov",
+    "header_size": 8,
+    "size": 279962,
+    "children":[ 
+    {
+      "name": "mvhd",
+      "header_size": 12,
+      "size": 108,
+      "timescale": 1000,
+      "duration": 331976,
+      "duration(ms)": 331976
+    },
+    {
+      "name": "trak",
+      "header_size": 8,
+      "size": 113829,
+      "children":[ 
+      {
+        "name": "tkhd",
+        "header_size": 12,
+        "size": 92,
+        "flags": 3,
+        "enabled": 1,
+        "id": 1,
+        "duration": 331915,
+        "width": 640.000000,
+        "height": 480.000000
+      },
+      {
+        "name": "edts",
+        "header_size": 8,
+        "size": 36,
+        "children":[ 
+        {
+          "name": "elst",
+          "header_size": 12,
+          "size": 28,
+          "entry_count": 1,
+          "entry/segment duration": 331915,
+          "entry/media time": 1001,
+          "entry/media rate": 1
+        }]
+      },
+      {
+        "name": "mdia",
+        "header_size": 8,
+        "size": 113693,
+        "children":[ 
+        {
+          "name": "mdhd",
+          "header_size": 12,
+          "size": 32,
+          "timescale": 24000,
+          "duration": 7965958,
+          "duration(ms)": 331914,
+          "language": "und"
+        },
+        {
+          "name": "hdlr",
+          "header_size": 12,
+          "size": 71,
+          "handler_type": "vide",
+          "handler_name": "ISO Media file produced by Google Inc."
+        },
+        {
+          "name": "minf",
+          "header_size": 8,
+          "size": 113582,
+          "children":[ 
+          {
+            "name": "vmhd",
+            "header_size": 12,
+            "size": 20,
+            "flags": 1,
+            "graphics_mode": 0,
+            "op_color": "0000,0000,0000"
+          },
+          {
+            "name": "dinf",
+            "header_size": 8,
+            "size": 36,
+            "children":[ 
+            {
+              "name": "dref",
+              "header_size": 12,
+              "size": 28,
+              "children":[ 
+              {
+                "name": "url ",
+                "header_size": 12,
+                "size": 12,
+                "flags": 1,
+                "location": "[local to file]"
+              }]
+            }]
+          },
+          {
+            "name": "stbl",
+            "header_size": 8,
+            "size": 113518,
+            "children":[ 
+            {
+              "name": "stsd",
+              "header_size": 12,
+              "size": 206,
+              "entry_count": 1,
+              "children":[ 
+              {
+                "name": "avc1",
+                "header_size": 8,
+                "size": 190,
+                "data_reference_index": 1,
+                "width": 640,
+                "height": 480,
+                "compressor": "",
+                "children":[ 
+                {
+                  "name": "avcC",
+                  "header_size": 8,
+                  "size": 49,
+                  "Configuration Version": 1,
+                  "Profile": "Main",
+                  "Profile Compatibility": 64,
+                  "Level": 30,
+                  "NALU Length Size": 4,
+                  "Sequence Parameter": "[67 4d 40 1e e8 80 50 1e d8 0b 50 60 10 64 00 00 0f a4 00 02 ee 00 3c 58 b4 48]",
+                  "Picture Parameter": "[68 eb ef 20]"
+                },
+                {
+                  "name": "colr",
+                  "header_size": 8,
+                  "size": 19
+                },
+                {
+                  "name": "pasp",
+                  "header_size": 8,
+                  "size": 16
+                },
+                {
+                  "name": "btrt",
+                  "header_size": 8,
+                  "size": 20
+                }]
+              }]
+            },
+            {
+              "name": "stts",
+              "header_size": 12,
+              "size": 24,
+              "entry_count": 1
+            },
+            {
+              "name": "stss",
+              "header_size": 12,
+              "size": 368,
+              "entry_count": 88
+            },
+            {
+              "name": "ctts",
+              "header_size": 12,
+              "size": 49176,
+              "entry_count": 6145
+            },
+            {
+              "name": "stsc",
+              "header_size": 12,
+              "size": 40,
+              "entry_count": 2
+            },
+            {
+              "name": "stsz",
+              "header_size": 12,
+              "size": 31852,
+              "sample_size": 0,
+              "sample_count": 7958
+            },
+            {
+              "name": "stco",
+              "header_size": 12,
+              "size": 31844,
+              "entry_count": 7957
+            }]
+          }]
+        }]
+      }]
+    },
+    {
+      "name": "trak",
+      "header_size": 8,
+      "size": 128526,
+      "children":[ 
+      {
+        "name": "tkhd",
+        "header_size": 12,
+        "size": 92,
+        "flags": 3,
+        "enabled": 1,
+        "id": 2,
+        "duration": 331976,
+        "width": 0.000000,
+        "height": 0.000000
+      },
+      {
+        "name": "edts",
+        "header_size": 8,
+        "size": 36,
+        "children":[ 
+        {
+          "name": "elst",
+          "header_size": 12,
+          "size": 28,
+          "entry_count": 1,
+          "entry/segment duration": 331976,
+          "entry/media time": 0,
+          "entry/media rate": 1
+        }]
+      },
+      {
+        "name": "mdia",
+        "header_size": 8,
+        "size": 128390,
+        "children":[ 
+        {
+          "name": "mdhd",
+          "header_size": 12,
+          "size": 32,
+          "timescale": 44100,
+          "duration": 14640128,
+          "duration(ms)": 331975,
+          "language": "spa"
+        },
+        {
+          "name": "hdlr",
+          "header_size": 12,
+          "size": 71,
+          "handler_type": "soun",
+          "handler_name": "ISO Media file produced by Google Inc."
+        },
+        {
+          "name": "minf",
+          "header_size": 8,
+          "size": 128279,
+          "children":[ 
+          {
+            "name": "smhd",
+            "header_size": 12,
+            "size": 16,
+            "balance": 0
+          },
+          {
+            "name": "dinf",
+            "header_size": 8,
+            "size": 36,
+            "children":[ 
+            {
+              "name": "dref",
+              "header_size": 12,
+              "size": 28,
+              "children":[ 
+              {
+                "name": "url ",
+                "header_size": 12,
+                "size": 12,
+                "flags": 1,
+                "location": "[local to file]"
+              }]
+            }]
+          },
+          {
+            "name": "stbl",
+            "header_size": 8,
+            "size": 128219,
+            "children":[ 
+            {
+              "name": "stsd",
+              "header_size": 12,
+              "size": 137,
+              "entry_count": 1,
+              "children":[ 
+              {
+                "name": "mp4a",
+                "header_size": 8,
+                "size": 121,
+                "data_reference_index": 1,
+                "channel_count": 2,
+                "sample_size": 16,
+                "sample_rate": 44100,
+                "children":[ 
+                {
+                  "name": "esds",
+                  "header_size": 12,
+                  "size": 65,
+                  "children":[ 
+                  {
+                    "name": "ESDescriptor",
+                    "header_size": 5,
+                    "size": 53,
+                    "es_id": 2,
+                    "stream_priority": 0,
+                    "children":[ 
+                    {
+                      "name": "DecoderConfig",
+                      "header_size": 5,
+                      "size": 39,
+                      "stream_type": 5,
+                      "object_type": 64,
+                      "up_stream": 0,
+                      "buffer_size": 0,
+                      "max_bitrate": 127999,
+                      "avg_bitrate": 127999,
+                      "DecoderSpecificInfo": "12 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "
+                    },
+                    {
+                      "name": "Descriptor:06",
+                      "header_size": 5,
+                      "size": 6
+                    }]
+                  }]
+                },
+                {
+                  "name": "btrt",
+                  "header_size": 8,
+                  "size": 20
+                }]
+              }]
+            },
+            {
+              "name": "stts",
+              "header_size": 12,
+              "size": 24,
+              "entry_count": 1
+            },
+            {
+              "name": "stsc",
+              "header_size": 12,
+              "size": 38944,
+              "entry_count": 3244
+            },
+            {
+              "name": "stsz",
+              "header_size": 12,
+              "size": 57208,
+              "sample_size": 0,
+              "sample_count": 14297
+            },
+            {
+              "name": "stco",
+              "header_size": 12,
+              "size": 31844,
+              "entry_count": 7957
+            },
+            {
+              "name": "sgpd",
+              "header_size": 12,
+              "size": 26,
+              "version": 1,
+              "grouping_type": "roll",
+              "default_length": 2,
+              "entry_count": 1,
+              "entries": [
+                "[ff ff]"
+              ]
+            },
+            {
+              "name": "sbgp",
+              "header_size": 12,
+              "size": 28,
+              "grouping_type": "roll",
+              "entry_count": 1
+            }]
+          }]
+        }]
+      }]
+    },
+    {
+      "name": "udta",
+      "header_size": 8,
+      "size": 37491,
+      "children":[ 
+      {
+        "name": "meta",
+        "header_size": 12,
+        "size": 37483,
+        "children":[ 
+        {
+          "name": "hdlr",
+          "header_size": 12,
+          "size": 33,
+          "handler_type": "mdir",
+          "handler_name": ""
+        },
+        {
+          "name": "free",
+          "header_size": 8,
+          "size": 2000
+        },
+        {
+          "name": "ilst",
+          "header_size": 8,
+          "size": 35438,
+          "children":[ 
+          {
+            "name": ".nam",
+            "header_size": 8,
+            "size": 61,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 53,
+              "type": 1,
+              "lang": 0,
+              "value": "Silly Symphonies - The Skeleton Dance"
+            }]
+          },
+          {
+            "name": ".ART",
+            "header_size": 8,
+            "size": 53,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 45,
+              "type": 1,
+              "lang": 0,
+              "value": "Walt Disney Animation Studios"
+            }]
+          },
+          {
+            "name": ".day",
+            "header_size": 8,
+            "size": 32,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 24,
+              "type": 1,
+              "lang": 0,
+              "value": "20151015"
+            }]
+          },
+          {
+            "name": ".too",
+            "header_size": 8,
+            "size": 37,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 29,
+              "type": 1,
+              "lang": 0,
+              "value": "Lavf60.15.100"
+            }]
+          },
+          {
+            "name": ".cmt",
+            "header_size": 8,
+            "size": 67,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 59,
+              "type": 1,
+              "lang": 0,
+              "value": "https://www.youtube.com/watch?v=vOGhAV-84iI"
+            }]
+          },
+          {
+            "name": "desc",
+            "header_size": 8,
+            "size": 242,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 234,
+              "type": 1,
+              "lang": 0,
+              "value": "As we hear the chimes at midnight and bats flutter from a belfry; as a hound howls at the full moon and black cats brawl on the tombstones; Through the gloom, white skeletons pass, Running and leaping in their shrouds!"
+            }]
+          },
+          {
+            "name": "ldes",
+            "header_size": 8,
+            "size": 242
+          },
+          {
+            "name": "covr",
+            "header_size": 8,
+            "size": 34696,
+            "children":[ 
+            {
+              "name": "data",
+              "header_size": 8,
+              "size": 34688,
+              "type": 13,
+              "lang": 0
+            }]
+          }]
+        }]
+      }]
+    }]
+  },
+  {
+    "name": "free",
+    "header_size": 8,
+    "size": 48
+  },
+  {
+    "name": "mdat",
+    "header_size": 8,
+    "size": 28791712
+  }
+]
