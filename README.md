@@ -14,6 +14,7 @@ Tramite un'interfaccia ASCII ispirata ai terminali, l'utente può esplorare i bo
 Un progetto editoriale curato da Nicolas Maigret e Maria Roszkowska che riflette visivamente, tramite estetica ASCII e tipografia monospazio, pratiche culturali legate alla condivisione e distribuzione dei media.  
 Un riferimento per l’approccio editoriale e per la rappresentazione "visuale del codice" nel design dell’interfaccia.
 
+<img src="img/Screenshot 2025-05-08 alle 17.28.52.png" width="300" alt="Landing page" />
 
 [thepiratebook.net](https://thepiratebook.net)
 
@@ -38,15 +39,15 @@ L'interfaccia si presenta come un terminale interattivo con elementi ASCII stili
 
 Il progetto è pensato per studenti, designer e sviluppatori curiosi di capire come è fatto un file `.mp4` a livello strutturale, e quali ruoli svolgono i box interni e i codec associati. È utile anche in un contesto didattico per introdurre i concetti di compressione, formati container e metadati multimediali.
 
-<img src="img/Screenshot 2025-05-09 alle 00.31.25" width="500" alt="Landing page" />
+<img src="img/Screenshot 2025-05-09 alle 00.31.25.png" width="500" alt="Landing page" />
 
-<img src="img/Screenshot 2025-05-09 alle 00.26.47" width="500" alt="Box-drawing characters" />
+<img src="img/Screenshot 2025-05-09 alle 00.26.47.png" width="500" alt="Box-drawing characters" />
 
-<img src="img/Screenshot 2025-05-09 alle 00.28.01" width="500" alt="Esplora un file mp4" />
+<img src="img/Screenshot 2025-05-09 alle 00.28.01.png" width="500" alt="Esplora un file mp4" />
 
 
 
-## Autore
+## Autores
 
 Mirko Bassani 
 Corso di Interaction Design – SUPSI DACD, 2025  
