@@ -38,7 +38,7 @@ L'interfaccia si presenta come un terminale interattivo con elementi ASCII stili
 
 Il progetto è pensato per studenti, designer e sviluppatori curiosi di capire come è fatto un file `.mp4` a livello strutturale, e quali ruoli svolgono i box interni e i codec associati. È utile anche in un contesto didattico per introdurre i concetti di compressione, formati container e metadati multimediali.
 
-## Autrice
+## Autore
 
-Arianna Chiodo  
+Mirko Bassani 
 Corso di Interaction Design – SUPSI DACD, 2025  
