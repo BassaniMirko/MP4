@@ -126,9 +126,9 @@
     suddivisi in tante coppie <strong>moof (movie fragment)</strong> e mdat, ciascuna relativa a un intervallo di tempo
 <br>
 
- Ogni frammento è indipendente, il che permette:<br>
+ Ogni frammento è indipendente, il che permette:<br><br>
  <div class="boxlist-row">
-   <div class="boxlist-symbol">╗<br>╠<br>║<br>║<br>╠<br>║<br>║<br>╠<br>╝<br></div>
+   <div class="boxlist-symbol"></div>
    <div class="boxlist-text"><br><strong>riproduzione progressiva:</strong> 
     il video può partire subito, senza aspettare il download completo<br>
     <br><strong>inserimento dinamico</strong> di nuove parti, utile per le dirette<br>
@@ -137,7 +137,7 @@
 </div>
 </div>
 
-</div>
+
 
 <div class="boxlist-row">
   <div class="boxlist-symbol">╠<br>║<br>║<br>║<br>║<br>╚<br></div>
@@ -146,55 +146,62 @@
     
     Entrambi funzionano dividendo il contenuto in segmenti e creando un manifesto (una sorta di indice):<br>
     
-    <div class="boxlist-row">
-      <div class="boxlist-symbol">╗<br>╠<br>║<br>║<br>║<br>║<br>╚<br></div>
-      <div class="boxlist-text"><br>Ogni manifesto elenca diverse versioni dello stesso video (es. 1080p, 720p, 480p), così il player sceglie automaticamente la più adatta in base alla connessione dell’utente. 
-        <img src="img/HLSvs_MPEGDash.jpg" alt="Diagramma pipeline compressione" class="diagram"> 
-        <br><br>
-            ┬── <strong>HLS (HTTP Live Streaming)</strong><br>
-│   ├──   playlist.m3u8<br>
-│   │     ├── <strong>Formato:</strong> Testo M3U8<br>
-│   │     ├── <strong>Contiene:</strong><br>
-│   │     │    ├── URL dei segmenti video .mp4<br>
-│   │     │    ├── Dur  ati di ogni segmento<br>
-│   │     │    └── Qualità disponibili<br>
-│   │     │    <br>
-│   │     └── <strong>Esempio:</strong><br>
-│   │         #EXTM3U<br>
-│   │         #EXTINF:10,<br>
-│   │         segment1.ts<br>
-│   │         ...<br>
-│   │<br>
-│   └── <strong>Uso:</strong><br>
-│      Streaming progressivo<br>
-│      Qualità adattiva dinamica<br>
-│<br>
-├── <strong>MPEG-DASH (Dynamic Adaptive Streaming)</strong><br>
-│   ├──  manifest.mpd<br>
-│   │     ├── <strong>Formato:</strong> XML<br>
-│   │     ├── <strong>Contiene:</strong><br>
-│   │     │    ├── Descrizione periodi e segmenti<br>
-│   │     │    ├── Codec e bitrate<br>
-│   │     │    └── Timing e template per i file<br>
-│   │     └── <strong>Esempio:</strong><br>
-│   │           MPD<br>
-│   │            Period<br>
-│   │             AdaptationSet<br>
-│   │              SegmentTemplate<br>
-│   │             AdaptationSet/<br>
-│   │            Period/<br>
-│   │           MPD/<br>
-│   │<br>
-│   └──  <strong>Uso:</strong><br>
-│          Streaming modulare<br>
-│          Supporta audio multipli e sottotitoli<br>
-│<br>
-╰── Entrambi guidano il player su quali file caricare    e in che ordine<br>
-<div class="content">
-  <p>In sintesi: la compressione e lo streaming adattivo lavorano insieme per offrire video di alta qualità con caricamenti rapidi e senza interruzioni, ovunque tu sia.
-  </p>
-  </div>
+   
      
+<div class="boxlist-text" ><br>Ogni manifesto elenca diverse versioni dello stesso video 
+  (es. 1080p, 720p, 480p), così il player sceglie automaticamente 
+        la più adatta in base alla connessione dell’utente. </div>
+</div>
+</div>
+         <br>
+
+        <pre>
+┬── <strong>HLS (HTTP Live Streaming)</strong>
+├── playlist.m3u8
+│   │     ├── <strong>Formato:</strong> Testo M3U8
+│   │     ├── <strong>Contiene:</strong>
+│   │     │    ├── URL dei segmenti video .mp4
+│   │     │    ├── Dur  ati di ogni segmento
+│   │     │    └── Qualità disponibili
+│   │     │    
+│   │     └── <strong>Esempio:</strong>
+│   │         #EXTM3U
+│   │         #EXTINF:10,
+│   │         segment1.ts
+│   │         ...
+│   │
+│   └── <strong>Uso:</strong>
+│      Streaming progressivo
+│      Qualità adattiva dinamica
+│
+├── <strong>MPEG-DASH (Dynamic Adaptive Streaming)</strong>
+│   ├──  manifest.mpd
+│   │     ├── <strong>Formato:</strong> XML
+│   │     ├── <strong>Contiene:</strong>
+│   │     │    ├── Descrizione periodi e segmenti
+│   │     │    ├── Codec e bitrate
+│   │     │    └── Timing e template per i file
+│   │     └── <strong>Esempio:</strong>
+│   │           MPD
+│   │            Period
+│   │             AdaptationSet
+│   │              SegmentTemplate
+│   │             AdaptationSet/
+│   │            Period/
+│   │           MPD/
+│   │
+│   └── <strong>Uso:</strong>
+│          Streaming modulare
+│          Supporta audio multipli e sottotitoli
+│
+╰── Entrambi guidano il player su quali file caricare    
+    e in che ordine
+        </pre>
+<div class="content">
+</div>
+<p><strong>In sintesi:</strong> la compressione e lo streaming adattivo lavorano insieme per offrire video di alta qualità con caricamenti rapidi e senza interruzioni, ovunque tu sia.
+</p>
+
             </div>
            </div>
         </div>

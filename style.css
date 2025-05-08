@@ -417,16 +417,19 @@ canvas {
     gap: 40px;
   }
   
-  ..infoSidebar {
-    top: 0px;
+  .infoSidebar {
+    bottom: 50px; 
+    left: 25px;
+
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 13px;
-    margin-left: 40px;
-    margin-top: 20px;
+    font-weight: 1;
+    font-size: 12px;
+    
+
     white-space: pre;
     display: inline-block;
     vertical-align: top;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     color: white;
   }

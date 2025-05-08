@@ -16,8 +16,8 @@ fetch('output.json')
   .catch(() => console.error('Impossibile caricare output.json'));
 
 const defaultFrame = `
-╔════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                                   STRUTTURA FILE MP4                                          ║
+╔═════════════════════════════════════════════════════════════════════════════════════╗
+║                                   STRUTTURA FILE MP4                                ║
 ╠════════════╦════════════╦════════════╦════════════╣
 ║    ftyp    ║    moov    ║    mdat    ║    udta    ║
 ╚════════════╩════════════╩════════════╩════════════╝
@@ -98,7 +98,7 @@ function showFtyp() {
     '║' + centerText('FTYP BOX') + '║',
     '╠' + '═'.repeat(interiorW) + '╣',
     formatRow('Voce', 'Significato', 'Contenuto'),
-    '╠' + '═'.repeat(20) + '╬' + '═'.repeat(45) + '╬' + '═'.repeat(15) + '╣',
+    '╠' + '═'.repeat(21) + '╬' + '═'.repeat(46) + '╬' + '═'.repeat(16) + '╣',
     ...info.map(i => formatRow(i.label, i.desc, i.value)),
     '╠' + '═'.repeat(interiorW) + '╣',
     padLine('Compatible brands supportate:'),
