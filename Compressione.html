@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compression Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Caricamento del font IBM Plex Mono da Google Fonts -->
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+      .diagram {
+        display: block;
+        margin: 1em auto;
+        max-height: 80%;
+        max-width: 100%;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .diagram:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+      .section-title {
+        font-weight: 500;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      /* Lightbox overlay */
+      .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.85);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: zoom-out;
+        z-index: 1000;
+      }
+      .lightbox-overlay img {
+        max-width: 90vw;
+        max-height: 90vh;
+      }
+    </style>
+  </head>
+<body>
+    <div class="container2">
+      <div class="menu">╔═ <a href="introduzione.html">Introduzione</a>
+        ╠═ <a href="Storia.html">Storia</a>
+        ╠═ <a href="Compressione.html"><strong>Compressione</strong></a>
+        ╠═ <a href="Codec.html">Codec</a>
+        ╠═ <a href="Esplora un file.html">Esplora un file</a>
+        ╚═ <a href="Esplora un file.html">Fonti</a>
+    </div>
+    <div  class="ascii-title" id="asciiTitle">
+      <pre id="asciiArt" style="cursor: pointer;">
+        
+███╗░░░███╗██████╗░██╗░░██╗
+████╗░████║██╔══██╗██║░░██║
+██╔████╔██║██████╔╝███████║
+██║╚██╔╝██║██╔═══╝░╚════██║
+██║░╚═╝░██║██║░░░░░░░░░░██║
+╚═╝░░░░░╚═╝╚═╝░░░░░░░░░░╚═╝
+      </pre>
+    </div>
+
+</div>
+    
+<div class="titolo-contenuto">Compressione</div>
+
+
+    <!-- CONTENUTO INTRODUZIONE -->
+    <div class="content">
+      <p>La compressione è il processo attraverso cui un file video viene ridotto di dimensioni per facilitarne la trasmissione e l’archiviazione,  
+        cercando di preservare la qualità visiva il più possibile. Non è il formato .mp4  
+        a gestire questa operazione, bensì il codec contenuto al suo interno. Il codec analizza  
+        i fotogrammi uno per uno, individua gli elementi ridondanti o statici e li codifica in modo più
+        efficiente. Il risultato è un file molto più leggero, ma visivamente simile all’originale.
+        <br>
+        
+        <div class="boxlist-wrapper">
+          <div class="boxlist-row">
+            <div class="boxlist-symbol">╠<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║</div>
+            <div class="boxlist-text"><strong>Netflix – eliminare il superfluo, per poi simularlo</strong><br>  
+              Uno degli elementi più complessi da comprimere è il film grain, ovvero la grana visiva  
+              tipica della pellicola. Poiché cambia in ogni fotogramma ed è altamente casuale, risulta  
+              difficile da codificare. Netflix affronta questo ostacolo rimuovendo la grana prima della  
+              compressione e reinserendola durante la riproduzione, simulandola in tempo reale. Questo  
+              sistema consente di risparmiare spazio senza rinunciare all’estetica originale.</div>
+          </div>
+          
+          <img src="img/12-Figure8-1.jpg" alt="Diagramma pipeline compressione" class="diagram">
+          
+          <div class="boxlist-row">
+            <div class="boxlist-symbol">║<br>╠<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br></div>
+            <div class="boxlist-text"><br><strong>YouTube – flessibilità adattiva</strong>
+            <br>Quando un video viene caricato su YouTube, viene automaticamente convertito in diverse versioni,  
+            ciascuna con risoluzioni e codec differenti. Durante la visione, il sistema seleziona la versione più  
+            adatta in base alla connessione dell’utente, modificandola anche in tempo reale se necessario. L’utilizzo  
+            del formato fMP4 (frammentato) consente uno streaming senza interruzioni, con caricamenti rapidi e  
+            navigazione fluida.</div>
+          </div>
+
+          <img src="img/OG-image-1024x536.jpg" alt="Diagramma pipeline compressione" class="diagram"> 
+          
+          <br>
+          
+          
+          
+              Oggi guardiamo video ovunque: sul telefono, sul computer, in treno o sul divano.
+               Ma dietro a questa comodità si nasconde una tecnologia complessa e ben strutturata.  
+ <br>Lo streaming video moderno si basa su tre pilastri: la frammentazione dei contenuti,  
+               l’uso di protocolli adattivi, e la scelta di formati contenitore. Ecco come funzionano.<br><br>
+
+<div class="boxlist-row">
+  <div class="boxlist-symbol">╠<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>║<br>╠<br>╚<br></div>
+  <div class="boxlist-text"><strong>Frammentazione e fMP4</strong><br>
+    Per rendere fluido lo streaming, un video non viene inviato tutto insieme,
+    ma scomposto in piccoli frammenti temporali. Questa tecnica si chiama frammentazione, 
+    e viene realizzata attraverso una versione del formato MP4 chiamata <strong>fMP4 (fragmented MP4)</strong>.
+    In un file MP4 classico, i dati audio/video si trovano tutti in un unico grande blocco 
+    <strong>(mdat)</strong> preceduto da un blocco di metadati <strong>(moov)</strong>. In fMP4 invece, questi dati sono 
+    suddivisi in tante coppie <strong>moof (movie fragment)</strong> e mdat, ciascuna relativa a un intervallo di tempo
+<br>
+
+ Ogni frammento è indipendente, il che permette:<br>
+ <div class="boxlist-row">
+   <div class="boxlist-symbol">╗<br>╠<br>║<br>║<br>╠<br>║<br>║<br>╠<br>╝<br></div>
+   <div class="boxlist-text"><br><strong>riproduzione progressiva:</strong> 
+    il video può partire subito, senza aspettare il download completo<br>
+    <br><strong>inserimento dinamico</strong> di nuove parti, utile per le dirette<br>
+    <br><strong>switch di qualità</strong> tra un frammento e l’altro, senza interrompere la visione</div>
+   </div>
+</div>
+</div>
+
+</div>
+
+<div class="boxlist-row">
+  <div class="boxlist-symbol">╠<br>║<br>║<br>║<br>║<br>╚<br></div>
+  <div class="boxlist-text"><strong>HLS e MPEG-DASH</strong><br>
+    Due protocolli dominano oggi il mondo dello streaming video: HLS (di Apple) e MPEG-DASH (standard ISO).
+    
+    Entrambi funzionano dividendo il contenuto in segmenti e creando un manifesto (una sorta di indice):<br>
+    
+    <div class="boxlist-row">
+      <div class="boxlist-symbol">╗<br>╠<br>║<br>║<br>║<br>║<br>╚<br></div>
+      <div class="boxlist-text"><br>Ogni manifesto elenca diverse versioni dello stesso video (es. 1080p, 720p, 480p), così il player sceglie automaticamente la più adatta in base alla connessione dell’utente. 
+        <img src="img/HLSvs_MPEGDash.jpg" alt="Diagramma pipeline compressione" class="diagram"> 
+        <br><br>
+            ┬── <strong>HLS (HTTP Live Streaming)</strong><br>
+│   ├──   playlist.m3u8<br>
+│   │     ├── <strong>Formato:</strong> Testo M3U8<br>
+│   │     ├── <strong>Contiene:</strong><br>
+│   │     │    ├── URL dei segmenti video .mp4<br>
+│   │     │    ├── Dur  ati di ogni segmento<br>
+│   │     │    └── Qualità disponibili<br>
+│   │     │    <br>
+│   │     └── <strong>Esempio:</strong><br>
+│   │         #EXTM3U<br>
+│   │         #EXTINF:10,<br>
+│   │         segment1.ts<br>
+│   │         ...<br>
+│   │<br>
+│   └── <strong>Uso:</strong><br>
+│      Streaming progressivo<br>
+│      Qualità adattiva dinamica<br>
+│<br>
+├── <strong>MPEG-DASH (Dynamic Adaptive Streaming)</strong><br>
+│   ├──  manifest.mpd<br>
+│   │     ├── <strong>Formato:</strong> XML<br>
+│   │     ├── <strong>Contiene:</strong><br>
+│   │     │    ├── Descrizione periodi e segmenti<br>
+│   │     │    ├── Codec e bitrate<br>
+│   │     │    └── Timing e template per i file<br>
+│   │     └── <strong>Esempio:</strong><br>
+│   │           MPD<br>
+│   │            Period<br>
+│   │             AdaptationSet<br>
+│   │              SegmentTemplate<br>
+│   │             AdaptationSet/<br>
+│   │            Period/<br>
+│   │           MPD/<br>
+│   │<br>
+│   └──  <strong>Uso:</strong><br>
+│          Streaming modulare<br>
+│          Supporta audio multipli e sottotitoli<br>
+│<br>
+╰── Entrambi guidano il player su quali file caricare    e in che ordine<br>
+<div class="content">
+  <p>In sintesi: la compressione e lo streaming adattivo lavorano insieme per offrire video di alta qualità con caricamenti rapidi e senza interruzioni, ovunque tu sia.
+  </p>
+  </div>
+     
+            </div>
+           </div>
+        </div>
+      </div>    
+  </div>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    document.querySelectorAll('.diagram').forEach(img => {
+      img.addEventListener('click', () => {
+        const overlay = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        lbImg.src = img.getAttribute('src');
+        overlay.style.display = 'flex';
+      });
+    });
+    document.getElementById('lightbox').addEventListener('click', () => {
+      document.getElementById('lightbox').style.display = 'none';
+    });
+  </script>
+</body>
+</html>

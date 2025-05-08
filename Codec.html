@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compression Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Caricamento del font IBM Plex Mono da Google Fonts -->
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+      <div class="menu">╔═ <a href="introduzione.html">Introduzione</a>
+        ╠═ <a href="Storia.html">Storia</a>
+        ╠═ <a href="Compressione.html">Compressione</a>
+        ╠═ <a href="Codec.html"><strong>Codec</strong></a>
+        ╠═ <a href="Esplora un file.html">Esplora un file</a>
+        ╚═ <a href="Esplora un file.html">Fonti</a>
+    </div>
+    <div  class="ascii-title" id="asciiTitle">
+      <pre id="asciiArt" style="cursor: pointer;">
+          
+███╗░░░███╗██████╗░██╗░░██╗
+████╗░████║██╔══██╗██║░░██║
+██╔████╔██║██████╔╝███████║
+██║╚██╔╝██║██╔═══╝░╚════██║
+██║░╚═╝░██║██║░░░░░░░░░░██║
+╚═╝░░░░░╚═╝╚═╝░░░░░░░░░░╚═╝
+          </pre>
+    </div>
+
+</div>
+    
+<div class="titolo-contenuto">Cos'è un Codec</div>
+
+
+
+    <!-- CONTENUTO INTRODUZIONE -->
+    <div class="content">
+      <p>Il <strong>“tuttofare”</strong> La parola <strong>“codec”</strong> nasce dall’unione di <em>compressore</em> e <em>decompressore</em>.  
+        È l’algoritmo che trasforma un flusso audio/video pesante in un file più leggero (<strong>compressione</strong>) e poi lo ricostruisce per la riproduzione (<strong>decompressione</strong>).  
+        Immaginalo come un traduttore esperto: comprime il linguaggio originale per occupare meno spazio e poi ne effettua la traduzione inversa per restituire il contenuto in modo fedele.
+        <br>
+        <br>
+        <p> ╔═════════════════════════╗<br>
+            ║ I codec video più usati ║<br>
+            ╚═════════════════════════╝<br>
+            </p>
+        <div class="diagram-wrapper">
+          <div class="diagram-row">
+            <div class="diagram-label">╠ H.264 →<br>║<br>║</div>
+            <div class="diagram-text">Il <strong>“tuttofare”</strong> del video: eccezionale supporto praticamente su ogni dispositivo, ottimo compromesso tra qualità e peso.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label">╠ H.265 →<br>║<br>║</div>
+            <div class="diagram-text">o HEVC,  Fino al 50 % più efficiente di H.264, ideale per 4K e UHD, ma richiede hardware o software più recente.
+            </div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label">╠══ AV1 →<br>║<br>║</div>
+            <div class="diagram-text">Open-source e pensato per il futuro dello streaming: massima efficienza a costo di maggiore complessità di decodifica.
+            </div>
+          </div>
+        </div>
+        <p> ╔═════════════════════════╗<br>
+          ║  I codec audio più usati ║<br>
+          ╚═════════════════════════╝<br>
+          </p>
+        <div class="diagram-wrapper">
+          <div class="diagram-row">
+            <div class="diagram-label">╠══ AAC →<br>║</div>
+            <div class="diagram-text"> Lo standard nei file MP4 e nelle piattaforme di streaming: qualità elevata a bitrate moderati.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label">╠══ MP3 →<br>║<br>║</div>
+            <div class="diagram-text">Il codec audio più universale di sempre, garantito quasi ovunque, ma meno efficiente rispetto agli standard moderni.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label">╠═ Opus →<br>║</div>
+            <div class="diagram-text">Ottimizzato per lo streaming a bassa latenza, eccellente qualità anche con connessioni instabili o bitrate ridotti.</div>
+          </div>
+        </div>
+        <p> Ogni codec ha punti di forza e limiti: i più recenti (HEVC, AV1, Opus) offrono enormi risparmi di banda, ma richiedono dispositivi o software compatibili.  
+          Scegliere il codec giusto significa bilanciare efficacia della compressione e diffusione sui client degli utenti.</p> <br>
+        <p>In sintesi, il <em>container</em> MP4 è solo la scatola: senza un codec che ne esegua la compressione e la decompressione, il file rimarrebbe un contenitore vuoto.  
+          Con il codec adeguato, MP4 diventa la piattaforma ideale per distribuire video e audio in tutto il mondo, dal cinema in 4K allo streaming su smartphone.</p>
+       
+          <p> ╔══════════════════════════════╗<br>
+            ║  Come funziona un codec video  ║<br>
+            ╚══════════════════════════════╝<br>
+        </p>
+        <div class="diagram-wrapper">
+          <div class="diagram-row">
+            <div class="diagram-label2">╠═════════ Input →<br>║<br>║<br>║</div>
+            <div class="diagram-text">Il video grezzo (non compresso) entra nel codec. Può provenire da una videocamera, uno schermo o un rendering.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label2">╠═══════ Analisi →<br>║<br>║</div>
+            <div class="diagram-text">Il codec divide il video in frame e analizza differenze tra i frame per ridurre le informazioni ridondanti.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label2">╠ Trasformazione →<br>║<br>║<br>║</div>
+            <div class="diagram-text">I dati visivi vengono trasformati (es. tramite DCT o wavelet) per rappresentarli in modo più compatto e analizzabile.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label2">╠ Quantizzazione →<br>║<br>║<br>║</div>
+            <div class="diagram-text">I valori trasformati vengono approssimati per ridurre i dati da salvare (con perdita controllata di qualità).</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label2">╠══════ Codifica →<br>║      entropica <br>║</div>
+            <div class="diagram-text">Ultimo step di compressione: i dati vengono codificati in bit usando tecniche come Huffman o CABAC.</div>
+          </div>
+          <div class="diagram-row">
+            <div class="diagram-label2">╠════════ Output →<br>║</div>
+            <div class="diagram-text">Il file compresso è pronto per essere salvato, trasmesso o riprodotto. L’operazione inversa (decodifica) ricostruisce il contenuto.</div>
+          </div>
+        </div>
+
+        <p> ╔══════════════════════════════════════════════════════╗<br>
+            ║  Schema semplificato di compressione e decompressione   ║<br>
+            ╚══════════════════════════════════════════════════════╝<br>
+        </p>
+        <pre style="font-size: 0.85em;">
+╔════════════════════════════════════════════════════════════════╗
+║      VIDEO RAW               ┌──────────────┐                  ║
+║     (frame interi,           │  COMPRESSORE │                  ║
+║     non compressi)           └───────┬──────┘                  ║
+║                                      │                         ║
+║                                      ▼                         ║
+║                      FILE COMPRESSO (es. MP4 + H.264)          ║
+║                                      │                         ║
+║                                      │                         ║
+║                                      ▼                         ║
+║                              ┌───────────────┐                 ║ 
+║                              │ DECOMPRESSORE │                 ║
+║                              └───────┬───────┘                 ║
+║                                      │                         ║
+║                                      ▼                         ║
+║                         VIDEO PER LA RIPRODUZIONE              ║
+╚════════════════════════════════════════════════════════════════╝
+        </pre>
+
+        <p>Questi passaggi permettono di ridurre anche di 10 volte le dimensioni di un file video senza comprometterne troppo la qualità visiva.  
+        I codec moderni, come AV1 e H.265, usano tecniche molto avanzate di previsione tra frame (inter-frame prediction), compressione adattiva e ottimizzazione per l’hardware.</p>
+
+    </div>
+    <div class="footer-fixed">
+      <div class="footer-left">
+        Elaborato 2<br>
+        Estensioni<br>
+        MP4
+      </div>
+      <div class="footer-center">
+        CV2<br>
+        MIRKO BASSANI<br>
+        SUPSI DACD Mendrisio
+      </div>
+      <div class="footer-right">
+        CV 427.01 Interaction Design<br>
+        Andreas Gysin<br>
+        Giovanni Profeta
+      </div>
+    </div>
+</body>
+</html>

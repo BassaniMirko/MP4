@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compression Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Caricamento del font IBM Plex Mono da Google Fonts -->
+    <script src="script.js" defer></script>
+    <script src="coso.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+      <div class="menu">╔═ <a href="introduzione.html">Introduzione</a>
+        ╠═ <a href="Storia.html">Storia</a>
+        ╠═ <a href="Compressione.html">Compressione</a>
+        ╠═ <a href="Codec.html">Codec</a>
+        ╠═ <a href="Esplora un file.html"><strong>Esplora un file</strong></a>
+        ╚═ <a href="Esplora un file.html">Fonti</a>
+    </div>
+    <div  class="ascii-title" id="asciiTitle">
+      <pre id="asciiArt" style="cursor: pointer;">
+          
+███╗░░░███╗██████╗░██╗░░██╗
+████╗░████║██╔══██╗██║░░██║
+██╔████╔██║██████╔╝███████║
+██║╚██╔╝██║██╔═══╝░╚════██║
+██║░╚═╝░██║██║░░░░░░░░░░██║
+╚═╝░░░░░╚═╝╚═╝░░░░░░░░░░╚═╝
+      </pre>
+    </div>
+    
+  </div>
+  
+  <div class="titolo-contenuto">Esplora un file</div>
+  <div class="content2">
+    <video class="myVideo" width="640" controls>
+      <source src="il_tuo_video.mp4" type="video/mp4">
+      Il tuo browser non supporta il tag video.
+    </video>
+    
+    <div class="ascii-boxes">
+      <pre id="asciiMenu">
+        ╔═══════════════════════════════════════════════════╗
+        ║                  STRUTTURA FILE MP4               ║
+        ╠════════════╦════════════╦════════════╦════════════╣
+        ║    <span class="clickable" data-box="ftyp">ftyp</span>    ║    <span class="clickable" data-box="moov">moov</span>    ║    <span class="clickable" data-box="mdat">mdat</span>    ║    <span class="clickable" data-box="udta">udta</span>    ║
+        ╚════════════╩════════════╩════════════╩════════════╝
+      </pre>
+    </div>
+    
+    <!-- PANNELLO DETTAGLI -->
+
+   
+    <div class="ascii-container">
+      <pre id="boxContent"></pre>
+      <div id="infoSidebar" class="ascii-sidebar"></div>
+    </div>
+    
+<div class="infoSidebar">
+  <pre>
+  ╔═══════════════════════════════════════════════════╗
+  ║         GUIDA ALLE BOX MP4                        ║
+  ╠═══════════════════════════════════════════════════╣
+  ║ ftyp  → File Type Box                             ║
+  ║         Specifica il tipo di file e i brand       ║
+  ║         compatibili (es. isom, mp42, etc.)        ║
+  ║                                                   ║
+  ║ moov  → Movie Box                                 ║
+  ║         Contiene i metadati del file, come        ║
+  ║         durata, tracce video/audio, header        ║
+  ║                                                   ║
+  ║ mdat  → Media Data Box                            ║
+  ║         Contiene i dati grezzi audio/video        ║
+  ║         (frame e suoni compressi)                 ║
+  ║                                                   ║
+  ║ udta  → User Data Box                             ║
+  ║         Sezione opzionale con metadati utente:    ║
+  ║         titolo, autore, commenti, tag             ║
+  ╚═══════════════════════════════════════════════════╝
+  </pre>
+  </div>
+  
+  
+<footer class="footerintro">
+      <div class="footer-col">Elaborato 2<br>Estensione file<br>MP4</div>
+      <div class="footer-col">CV2<br>Mirko Bassani<br>SUPSI DACD Mendrisio</div>
+      <div class="footer-col">CV 427.01 Interaction Design<br>Andreas Gysin<br>Giovanni Profeta</div>
+    </footer>
+
+  
+    </div>
+</body>
+</html>

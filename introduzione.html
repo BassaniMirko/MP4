@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Compression Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Caricamento del font IBM Plex Mono da Google Fonts -->
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container2">
+      <div class="menu">╔═ <a href="introduzione.html"><strong>Introduzione</strong></a>
+        ╠═ <a href="Storia.html">Storia</a>
+        ╠═ <a href="Compressione.html">Compressione</a>
+        ╠═ <a href="Codec.html">Codec</a>
+        ╠═ <a href="Esplora un file.html">Esplora un file</a>
+        ╚═ <a href="Esplora un file.html">Fonti</a>
+    </div>
+    <div class="ascii-title" id="asciiTitle">
+        <pre id="asciiArt" style="cursor: pointer;">
+            
+███╗░░░███╗██████╗░██╗░░██╗
+████╗░████║██╔══██╗██║░░██║
+██╔████╔██║██████╔╝███████║
+██║╚██╔╝██║██╔═══╝░╚════██║
+██║░╚═╝░██║██║░░░░░░░░░░██║
+╚═╝░░░░░╚═╝╚═╝░░░░░░░░░░╚═╝
+            </pre>
+      </div>
+
+</div>
+    
+<div class="titolo-contenuto">Introduzione</div>
+
+
+
+    <!-- CONTENUTO INTRODUZIONE -->
+    <div class="content">
+    
+        <p>
+            Il formato <strong>.mp4</strong> è il contenitore invisibile che regge il mondo dei video moderni. È presente nei film di Netflix, nei reel di Instagram, nei tutorial di YouTube, nei ricordi del tuo telefono. Ma ciò che vediamo è solo la superficie.
+        </p>
+        <p>
+            Dietro a ogni .mp4 si nasconde una struttura complessa ma ordinata. L’MP4 è un contenitore multimediale standardizzato (ISO/IEC 14496-14), progettato per unire elementi diversi — tracce video, audio, sottotitoli, metadati — in un’unica architettura modulare.
+        </p>
+        <p>
+            Ogni file .mp4 è composto da “box” (o "atomi"), blocchi che svolgono funzioni specifiche:
+        </p>
+    
+        <div class="diagram-wrapper">
+            <div class="diagram-row">
+              <div class="diagram-label">╠ ftyp →<br>║</div>
+              <div class="diagram-text">identifica il tipo del file e la sua compatibilità</div>
+            </div>
+            <div class="diagram-row">
+              <div class="diagram-label">╠ moov →<br>║</div>
+              <div class="diagram-text">contiene le informazioni di sincronizzazione e struttura</div>
+            </div>
+            <div class="diagram-row">
+              <div class="diagram-label">╠ mdat →</div>
+              <div class="diagram-text">conserva i dati audio e video veri e propri</div>
+            </div>
+            <div class="diagram-row">
+              <div class="diagram-label">╠ udat →</div>
+              <div class="diagram-text">conserva i metadati definiti dall’utente</div>
+            </div>
+          </div>
+          
+        
+          
+        <p>
+            Questa suddivisione consente all’MP4 di essere estremamente versatile, adatto sia allo streaming che all’editing. La sua struttura consente di separare forma e contenuto: il contenitore organizza, ma non codifica.
+        </p>
+        <p>
+            Infatti, è importante ricordare che l’MP4 non è un codec. Non comprime né decomprime i dati. Al suo interno si trovano flussi già codificati — per esempio video in H.264 o H.265, e audio in AAC o MP3. Il contenitore li ospita e li sincronizza, ma non li modifica.
+        </p>
+        <p>
+            Per questo motivo, possiamo pensare all’MP4 come a una valigia ben organizzata. Non decide cosa ci metti dentro, ma ti permette di trasportare tutto con ordine e compatibilità.
+        </p>
+        <br>
+        <p>In sintesi:</p>
+        <div class="boxlist-wrapper">
+            <div class="boxlist-row">
+              <div class="boxlist-symbol">╠<br>║</div>
+              <div class="boxlist-text">È un contenitore, non un algoritmo di compressione</div>
+            </div>
+            <div class="boxlist-row">
+              <div class="boxlist-symbol">╠<br>║<br>║</div>
+              <div class="boxlist-text">Può ospitare flussi multipli (audio, video, sottotitoli)</div>
+            </div>
+            <div class="boxlist-row">
+              <div class="boxlist-symbol">╠<br>║</div>
+              <div class="boxlist-text">È compatibile con diversi codec</div>
+            </div>
+            <div class="boxlist-row">
+              <div class="boxlist-symbol">╚</div>
+              <div class="boxlist-text">È uno standard flessibile, adottato in tutto il mondo digitale</div>
+            </div>
+          </div>
+          
+    </div>
+    <footer class="footerintro">
+      <div class="footer-col">Elaborato 2<br>Estensione file<br>MP4</div>
+      <div class="footer-col">CV2<br>Mirko Bassani<br>SUPSI DACD Mendrisio</div>
+      <div class="footer-col">CV 427.01 Interaction Design<br>Andreas Gysin<br>Giovanni Profeta</div>
+    </footer>
+    
+</body>
+</html>

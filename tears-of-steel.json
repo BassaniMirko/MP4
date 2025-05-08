@@ -1,0 +1,40 @@
+{
+    "ftyp": {
+      "name": "ftyp",
+      "majorBrand": "isom",
+      "minorVersion": "512",
+      "compatibleBrands": ["isom", "iso2", "avc1", "mp41"]
+    },
+    "moov": {
+      "name": "moov",
+      "tracks": [
+        {
+          "id": 1,
+          "type": "vide",
+          "duration": 634567,
+          "codec": "avc1",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": 2,
+          "type": "soun",
+          "duration": 634400,
+          "codec": "mp4a",
+          "channels": 2,
+          "sampleRate": 48000
+        }
+      ]
+    },
+    "mdat": {
+      "name": "mdat",
+      "size": 156274830
+    },
+    "udta": {
+      "name": "udta",
+      "title": "Tears of Steel",
+      "artist": "Blender Foundation",
+      "comment": "Creative Commons Attribution"
+    }
+  }
+  
